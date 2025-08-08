@@ -26,15 +26,15 @@ It enhances a Medibox with *light and temperature monitoring, an **automatic ser
 
 ---
 
-## 📷 Wiring Diagram<img width="627" height="456" alt="1" src="https://github.com/user-attachments/assets/72d11b79-a55a-4148-9351-ab4a53e538d5" />
+## 📷 Wiring Diagram<img width="627" height="456" alt="Wiring Diagram" src="https://github.com/user-attachments/assets/72d11b79-a55a-4148-9351-ab4a53e538d5" />
 
 ---
 
-## 📷 Node-RED flow graph<img width="693" height="485" alt="2" src="https://github.com/user-attachments/assets/9a9191d8-a617-4388-950d-59073a403f74" />
+## 📷 Node-RED flow graph<img width="693" height="485" alt="Node-RED flow graph" src="https://github.com/user-attachments/assets/9a9191d8-a617-4388-950d-59073a403f74" />
 
 ---
 
-## 📷 Node-RED Dashboard<img width="1327" height="587" alt="3" src="https://github.com/user-attachments/assets/76eb386a-c0e8-42e4-abe0-b2a9c009fe56" />
+## 📷 Node-RED Dashboard<img width="1327" height="587" alt="Node-RED Dashboard" src="https://github.com/user-attachments/assets/76eb386a-c0e8-42e4-abe0-b2a9c009fe56" />
 
 
 ---
