@@ -1,4 +1,4 @@
-# Medibox – Smart Medicine Storage System
+# Medibox 
 
 This project is part of the *EN2853 Embedded Systems and Applications*.
 It enhances a Medibox with *light and temperature monitoring, an **automatic servo-controlled window, and a **Node-RED dashboard* for remote monitoring and control.
