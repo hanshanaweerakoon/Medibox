@@ -1,0 +1,1512 @@
+[
+    {
+        "id": "293b5438cc8f9a69",
+        "type": "tab",
+        "label": "Medibox Control",
+        "disabled": false,
+        "info": "Compact Medibox dashboard for EN2853 Assignment 2, all components in one view without scrolling, with default slider values and Reset Defaults button",
+        "env": []
+    },
+    {
+        "id": "3835acad0c417101",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#9600cc",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "de829b1ea14925a8",
+        "type": "ui_group",
+        "name": "test",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "acee422d9cfe1197",
+        "type": "ui_group",
+        "name": "test2",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a196dde8b2db5c7d",
+        "type": "ui_group",
+        "name": "test1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "50ed7bd034d7dd38",
+        "type": "mqtt-broker",
+        "name": "medibox",
+        "broker": "broker.emqx.io",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b42609ecfd882e68",
+        "type": "ui_group",
+        "name": "Light",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6ce6b9e8d98fe216",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7a2cc21cdcd4a114",
+        "type": "ui_tab",
+        "name": "Medibox",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b790a4b6af8179b6",
+        "type": "ui_group",
+        "name": "Light Monitoring",
+        "tab": "7a2cc21cdcd4a114",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": "custom-group"
+    },
+    {
+        "id": "8748e00ede2753e8",
+        "type": "ui_group",
+        "name": "Temperature Monitoring",
+        "tab": "7a2cc21cdcd4a114",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": "custom-group"
+    },
+    {
+        "id": "2a3b0a1f.3c2b6e",
+        "type": "ui_group",
+        "name": "Window Control",
+        "tab": "7a2cc21cdcd4a114",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ef57903d498ff7c9",
+        "type": "ui_group",
+        "name": "Medication Schedule",
+        "tab": "7a2cc21cdcd4a114",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": "custom-group"
+    },
+    {
+        "id": "1d915e0604cc92d0",
+        "type": "mqtt in",
+        "z": "293b5438cc8f9a69",
+        "name": "Light Intensity Input",
+        "topic": "ADMIN-LIGHT",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "6ce6b9e8d98fe216",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 60,
+        "wires": [
+            [
+                "36c6ec45a3c6f07f",
+                "bfde241cd59a6d24",
+                "9ab427b32b6b2b67"
+            ]
+        ]
+    },
+    {
+        "id": "36c6ec45a3c6f07f",
+        "type": "ui_gauge",
+        "z": "293b5438cc8f9a69",
+        "name": "Light Intensity Gauge",
+        "group": "b790a4b6af8179b6",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Light Intensity",
+        "label": "",
+        "format": "{{value | number:2}}",
+        "min": 0,
+        "max": 1,
+        "colors": [
+            "#4df41f",
+            "#f9e143",
+            "#e91e63"
+        ],
+        "seg1": "0.33",
+        "seg2": "0.66",
+        "diff": true,
+        "className": "custom-gauge",
+        "x": 340,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "bfde241cd59a6d24",
+        "type": "ui_chart",
+        "z": "293b5438cc8f9a69",
+        "name": "Light Intensity History",
+        "group": "b790a4b6af8179b6",
+        "order": 3,
+        "width": 6,
+        "height": 4,
+        "label": "History",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "cubic",
+        "nodata": "No Data",
+        "dot": false,
+        "ymin": 0,
+        "ymax": 1,
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#2196f3",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "custom-chart",
+        "x": 360,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ab427b32b6b2b67",
+        "type": "ui_text",
+        "z": "293b5438cc8f9a69",
+        "group": "b790a4b6af8179b6",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "Light Intensity Value",
+        "label": "Intensity:",
+        "format": "{{value | number:3}}",
+        "layout": "row-center",
+        "className": "custom-text",
+        "style": false,
+        "font": "Roboto",
+        "fontSize": 16,
+        "color": "#ffffff",
+        "x": 340,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "4584e6fac7d2486f",
+        "type": "mqtt in",
+        "z": "293b5438cc8f9a69",
+        "name": "Temperature Input",
+        "topic": "ADMIN-TEMP",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "6ce6b9e8d98fe216",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "a7db01088a61c7a7",
+                "be1af061b51d2fcd"
+            ]
+        ]
+    },
+    {
+        "id": "a7db01088a61c7a7",
+        "type": "ui_gauge",
+        "z": "293b5438cc8f9a69",
+        "name": "Temperature Gauge",
+        "group": "8748e00ede2753e8",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°C",
+        "format": "{{value | number:1}}",
+        "min": 10,
+        "max": "70",
+        "colors": [
+            "#1ff4bf",
+            "#efdf34",
+            "#e91e63"
+        ],
+        "seg1": 25,
+        "seg2": 35,
+        "diff": true,
+        "className": "custom-gauge",
+        "x": 340,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "be1af061b51d2fcd",
+        "type": "ui_chart",
+        "z": "293b5438cc8f9a69",
+        "name": "Temperature History",
+        "group": "8748e00ede2753e8",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "label": "History",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "cubic",
+        "nodata": "No Data",
+        "dot": false,
+        "ymin": 10,
+        "ymax": 40,
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#9c27b0",
+            "#2196f3"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "custom-chart",
+        "x": 340,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ca100cc0a3f96c3e",
+        "type": "mqtt in",
+        "z": "293b5438cc8f9a69",
+        "name": "Servo Angle Input",
+        "topic": "ADMIN-SERVO-ANGLE",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "6ce6b9e8d98fe216",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 340,
+        "wires": [
+            [
+                "c7f3b063d4f98a6e"
+            ]
+        ]
+    },
+    {
+        "id": "c7f3b063d4f98a6e",
+        "type": "ui_gauge",
+        "z": "293b5438cc8f9a69",
+        "name": "Servo Angle Gauge",
+        "group": "2a3b0a1f.3c2b6e",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "gtype": "compass",
+        "title": "Window Angle",
+        "label": "°",
+        "format": "{{value | number:1}}",
+        "min": 0,
+        "max": 180,
+        "colors": [
+            "#2196f3",
+            "#9c27b0",
+            "#e91e63"
+        ],
+        "seg1": 60,
+        "seg2": 120,
+        "diff": false,
+        "className": "custom-gauge",
+        "x": 340,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "cc06cb87b0efdd05",
+        "type": "ui_slider",
+        "z": "293b5438cc8f9a69",
+        "name": "Sampling Interval",
+        "label": "Sampling",
+        "tooltip": "Set LDR sampling interval (1-60s)",
+        "group": "b790a4b6af8179b6",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "outs": "end",
+        "topic": "ADMIN-SAMPLE-INTERVAL",
+        "topicType": "str",
+        "min": 1,
+        "max": 60,
+        "step": 1,
+        "className": "custom-slider",
+        "x": 120,
+        "y": 400,
+        "wires": [
+            [
+                "23909ddea457686e"
+            ]
+        ]
+    },
+    {
+        "id": "23909ddea457686e",
+        "type": "function",
+        "z": "293b5438cc8f9a69",
+        "name": "Handle Sampling Interval",
+        "func": "if (typeof msg.payload !== 'number' || msg.payload < 1 || msg.payload > 60) {\n  node.warn('Invalid Sampling Interval: ' + msg.payload);\n  return null;\n}\nmsg.payload = msg.payload.toString();\nmsg.topic = 'ADMIN-SAMPLE-INTERVAL';\nmsg.notify = 'Sampling set to ' + msg.payload + 's';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 400,
+        "wires": [
+            [
+                "f6b4643009a3793b",
+                "516d90edc39e851d",
+                "c851466198238018"
+            ]
+        ]
+    },
+    {
+        "id": "516d90edc39e851d",
+        "type": "ui_text",
+        "z": "293b5438cc8f9a69",
+        "group": "b790a4b6af8179b6",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "name": "Sampling Interval Value",
+        "label": "Current:",
+        "format": "{{msg.payload}}s",
+        "layout": "row-center",
+        "className": "custom-text",
+        "style": false,
+        "font": "",
+        "fontSize": 14,
+        "color": "#ffffff",
+        "x": 650,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "086c78f66c886ecb",
+        "type": "ui_slider",
+        "z": "293b5438cc8f9a69",
+        "name": "Sending Interval",
+        "label": "Sending",
+        "tooltip": "Set data sending interval (10-600s)",
+        "group": "b790a4b6af8179b6",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "outs": "end",
+        "topic": "ADMIN-SEND-INTERVAL",
+        "topicType": "str",
+        "min": 10,
+        "max": 600,
+        "step": 10,
+        "className": "custom-slider",
+        "x": 120,
+        "y": 460,
+        "wires": [
+            [
+                "fc4b62de093bb5f7"
+            ]
+        ]
+    },
+    {
+        "id": "fc4b62de093bb5f7",
+        "type": "function",
+        "z": "293b5438cc8f9a69",
+        "name": "Handle Sending Interval",
+        "func": "if (typeof msg.payload !== 'number' || msg.payload < 10 || msg.payload > 600) {\n  node.warn('Invalid Sending Interval: ' + msg.payload);\n  return null;\n}\nmsg.payload = msg.payload.toString();\nmsg.topic = 'ADMIN-SEND-INTERVAL';\nmsg.notify = 'Sending set to ' + msg.payload + 's';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 460,
+        "wires": [
+            [
+                "f6b4643009a3793b",
+                "7ea77ae6db7ffd8b",
+                "c851466198238018"
+            ]
+        ]
+    },
+    {
+        "id": "7ea77ae6db7ffd8b",
+        "type": "ui_text",
+        "z": "293b5438cc8f9a69",
+        "group": "b790a4b6af8179b6",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "name": "Sending Interval Value",
+        "label": "Current:",
+        "format": "{{msg.payload}}s",
+        "layout": "row-center",
+        "className": "custom-text",
+        "style": false,
+        "font": "Roboto",
+        "fontSize": 14,
+        "color": "#ffffff",
+        "x": 560,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "0b5147d56f4ee92d",
+        "type": "ui_slider",
+        "z": "293b5438cc8f9a69",
+        "name": "Theta Offset",
+        "label": "Min Angle",
+        "tooltip": "Set minimum servo angle (0-120°)",
+        "group": "2a3b0a1f.3c2b6e",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "outs": "end",
+        "topic": "ADMIN-THETA-OFFSET",
+        "topicType": "str",
+        "min": 0,
+        "max": 120,
+        "step": 1,
+        "className": "custom-slider",
+        "x": 120,
+        "y": 520,
+        "wires": [
+            [
+                "799c31c0da5fb959"
+            ]
+        ]
+    },
+    {
+        "id": "799c31c0da5fb959",
+        "type": "function",
+        "z": "293b5438cc8f9a69",
+        "name": "Handle Theta Offset",
+        "func": "if (typeof msg.payload !== 'number' || msg.payload < 0 || msg.payload > 120) {\n  node.warn('Invalid Theta Offset: ' + msg.payload);\n  return null;\n}\nmsg.payload = Math.round(msg.payload).toString();\nmsg.topic = 'ADMIN-THETA-OFFSET';\nmsg.notify = 'Min Angle set to ' + msg.payload + '°';\nnode.send([{ payload: parseFloat(msg.payload), topic: 'set_slider_theta_offset' }, msg]);\nreturn msg;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 520,
+        "wires": [
+            [
+                "0b5147d56f4ee92d"
+            ],
+            [
+                "f6b4643009a3793b",
+                "ab527c6fa383747c",
+                "c851466198238018"
+            ]
+        ]
+    },
+    {
+        "id": "ab527c6fa383747c",
+        "type": "ui_text",
+        "z": "293b5438cc8f9a69",
+        "group": "2a3b0a1f.3c2b6e",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "Theta Offset Value",
+        "label": "Current:",
+        "format": "{{msg.payload}}°",
+        "layout": "row-center",
+        "className": "custom-text",
+        "style": false,
+        "font": "Roboto",
+        "fontSize": 14,
+        "color": "#ffffff",
+        "x": 560,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "0a7826efb1358186",
+        "type": "ui_slider",
+        "z": "293b5438cc8f9a69",
+        "name": "Control Factor",
+        "label": "γ",
+        "tooltip": "Set control factor (0-1)",
+        "group": "2a3b0a1f.3c2b6e",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "outs": "end",
+        "topic": "ADMIN-GAMMA",
+        "topicType": "str",
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "className": "custom-slider",
+        "x": 120,
+        "y": 580,
+        "wires": [
+            [
+                "01b71e9ecc0edf81"
+            ]
+        ]
+    },
+    {
+        "id": "01b71e9ecc0edf81",
+        "type": "function",
+        "z": "293b5438cc8f9a69",
+        "name": "Handle Gamma",
+        "func": "if (typeof msg.payload !== 'number' || msg.payload < 0 || msg.payload > 1) {\n  node.warn('Invalid Control Factor: ' + msg.payload);\n  return null;\n}\nmsg.payload = msg.payload.toFixed(2);\nmsg.topic = 'ADMIN-GAMMA';\nmsg.notify = 'Control Factor set to ' + msg.payload;\nnode.send([{ payload: parseFloat(msg.payload), topic: 'set_slider_gamma' }, msg]);\nreturn msg;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 580,
+        "wires": [
+            [
+                "0a7826efb1358186"
+            ],
+            [
+                "f6b4643009a3793b",
+                "7eb4c761354c9d5e",
+                "c851466198238018"
+            ]
+        ]
+    },
+    {
+        "id": "7eb4c761354c9d5e",
+        "type": "ui_text",
+        "z": "293b5438cc8f9a69",
+        "group": "2a3b0a1f.3c2b6e",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "name": "Gamma Value",
+        "label": "Current:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "custom-text",
+        "style": false,
+        "font": "Roboto",
+        "fontSize": 14,
+        "color": "#ffffff",
+        "x": 560,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "15915729afa3532d",
+        "type": "ui_slider",
+        "z": "293b5438cc8f9a69",
+        "name": "Ideal Temperature",
+        "label": "Ideal Temp",
+        "tooltip": "Set ideal temperature (10-40°C)",
+        "group": "2a3b0a1f.3c2b6e",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "outs": "end",
+        "topic": "ADMIN-T-MED",
+        "topicType": "str",
+        "min": 10,
+        "max": 40,
+        "step": 0.5,
+        "className": "custom-slider",
+        "x": 120,
+        "y": 640,
+        "wires": [
+            [
+                "d9b922e868788439"
+            ]
+        ]
+    },
+    {
+        "id": "d9b922e868788439",
+        "type": "function",
+        "z": "293b5438cc8f9a69",
+        "name": "Handle T_med",
+        "func": "if (typeof msg.payload !== 'number' || msg.payload < 10 || msg.payload > 40) {\n  node.warn('Invalid Ideal Temperature: ' + msg.payload);\n  return null;\n}\nmsg.payload = msg.payload.toFixed(1);\nmsg.topic = 'ADMIN-T-MED';\nmsg.notify = 'Ideal Temp set to ' + msg.payload + '°C';\nnode.send([{ payload: parseFloat(msg.payload), topic: 'set_slider_t_med' }, { payload: msg.payload, topic: 'T_MED' }, msg]);\nreturn msg;",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 640,
+        "wires": [
+            [
+                "15915729afa3532d"
+            ],
+            [
+                "be1af061b51d2fcd"
+            ],
+            [
+                "f6b4643009a3793b",
+                "8c680f7c04049128",
+                "c851466198238018"
+            ]
+        ]
+    },
+    {
+        "id": "8c680f7c04049128",
+        "type": "ui_text",
+        "z": "293b5438cc8f9a69",
+        "group": "2a3b0a1f.3c2b6e",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "name": "T_med Value",
+        "label": "Current:",
+        "format": "{{msg.payload}}°C",
+        "layout": "row-center",
+        "className": "custom-text",
+        "style": false,
+        "font": "Roboto",
+        "fontSize": 14,
+        "color": "#ffffff",
+        "x": 560,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "a1b2c3d4e5f6a7b8",
+        "type": "ui_button",
+        "z": "293b5438cc8f9a69",
+        "name": "Reset Defaults",
+        "group": "2a3b0a1f.3c2b6e",
+        "order": 8,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Reset Defaults",
+        "tooltip": "Reset γ, Ideal Temp, and Min Angle to defaults",
+        "color": "#ffffff",
+        "bgcolor": "",
+        "className": "custom-button custom-button-on",
+        "icon": "fa-undo",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 120,
+        "y": 700,
+        "wires": [
+            [
+                "b1c2d3e4f5a6b7c8"
+            ]
+        ]
+    },
+    {
+        "id": "b1c2d3e4f5a6b7c8",
+        "type": "function",
+        "z": "293b5438cc8f9a69",
+        "name": "Reset Defaults",
+        "func": "return [\n    { payload: Number(0.75).toFixed(2), topic: 'ADMIN-GAMMA', notify: 'Control Factor reset to 0.75' },\n    { payload: Number(30).toFixed(1), topic: 'ADMIN-T-MED', notify: 'Ideal Temp reset to 30.0°C' },\n    { payload: Number(30).toFixed(0), topic: 'ADMIN-THETA-OFFSET', notify: 'Min Angle reset to 30°' },\n    { payload: 'Defaults Reset', topic: 'notify', notify: 'Defaults Reset' }\n];",
+        "outputs": 4,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 700,
+        "wires": [
+            [
+                "f6b4643009a3793b",
+                "0a7826efb1358186",
+                "c851466198238018"
+            ],
+            [
+                "f6b4643009a3793b",
+                "15915729afa3532d",
+                "c851466198238018"
+            ],
+            [
+                "f6b4643009a3793b",
+                "0b5147d56f4ee92d",
+                "c851466198238018"
+            ],
+            [
+                "c851466198238018"
+            ]
+        ]
+    },
+    {
+        "id": "c851466198238018",
+        "type": "ui_toast",
+        "z": "293b5438cc8f9a69",
+        "displayTime": "2",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "custom-toast",
+        "topic": "",
+        "name": "Slider Notification",
+        "x": 560,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "f6b4643009a3793b",
+        "type": "mqtt out",
+        "z": "293b5438cc8f9a69",
+        "name": "Parameter Output",
+        "topic": "",
+        "qos": "0",
+        "retain": false,
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "6ce6b9e8d98fe216",
+        "x": 790,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "7ba7b8fab9e1f556",
+        "type": "inject",
+        "z": "293b5438cc8f9a69",
+        "name": "Set Theta Offset Default",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "30",
+        "payloadType": "num",
+        "x": 130,
+        "y": 480,
+        "wires": [
+            [
+                "799c31c0da5fb959"
+            ]
+        ]
+    },
+    {
+        "id": "2819348b3cad033d",
+        "type": "inject",
+        "z": "293b5438cc8f9a69",
+        "name": "Set Gamma Default",
+        "props": [
+            {
+                "p": "payload",
+                "v": "0.75",
+                "vt": "num"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0.75",
+        "payloadType": "num",
+        "x": 120,
+        "y": 540,
+        "wires": [
+            [
+                "01b71e9ecc0edf81"
+            ]
+        ]
+    },
+    {
+        "id": "e4d0df7ff4e0cc1b",
+        "type": "inject",
+        "z": "293b5438cc8f9a69",
+        "name": "Set T_med Default",
+        "props": [
+            {
+                "p": "payload",
+                "v": "30",
+                "vt": "num"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "30",
+        "payloadType": "num",
+        "x": 120,
+        "y": 600,
+        "wires": [
+            [
+                "d9b922e868788439"
+            ]
+        ]
+    },
+    {
+        "id": "cd4cecafcadd0c7f",
+        "type": "ui_template",
+        "z": "293b5438cc8f9a69",
+        "group": "",
+        "name": "Custom CSS",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');\n\n  /* Dashboard Background */\n  body, .nr-dashboard-theme {\n    background: linear-gradient(135deg, #1e3c72, #2a5298);\n    font-family: 'Roboto', sans-serif;\n    color: #ffffff;\n    padding: 10px;\n    margin: 0;\n    overflow: hidden;\n  }\n\n  /* Group Styling */\n  .custom-group {\n    background: transparent !important;\n    margin: 5px !important;\n    padding: 5px;\n  }\n\n  /* Card Styling (Glassmorphism) */\n  .nr-dashboard-card {\n    background: rgba(255, 255, 255, 0.1);\n    backdrop-filter: blur(10px);\n    border-radius: 8px;\n    border: 1px solid rgba(255, 255, 255, 0.2);\n    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);\n    margin: 5px;\n    padding: 5px;\n    animation: fadeIn 0.4s ease-in;\n  }\n  .nr-dashboard-cardtitle {\n    color: #ffffff;\n    font-weight: 700;\n    font-size: 1em;\n    text-transform: uppercase;\n    padding: 5px 0;\n    border-bottom: 1px solid rgba(255, 255, 255, 0.2);\n  }\n\n  @keyframes fadeIn {\n    from { opacity: 0; transform: translateY(10px); }\n    to { opacity: 1; transform: translateY(0); }\n  }\n\n  /* Gauge Styling */\n  .custom-gauge canvas {\n    filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.2));\n    transition: transform 0.2s ease;\n  }\n  .custom-gauge:hover canvas {\n    transform: scale(1.05);\n  }\n\n  /* Chart Styling */\n  .custom-chart {\n    background: rgba(255, 255, 255, 0.05) !important;\n    border-radius: 8px;\n    padding: 5px;\n    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);\n  }\n  .custom-chart canvas {\n    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));\n  }\n\n  /* Slider Styling */\n  .custom-slider .md-slider-wrapper {\n    background: rgba(255, 255, 255, 0.15);\n    border-radius: 8px;\n    padding: 5px;\n    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);\n  }\n  .custom-slider .md-slider {\n    -webkit-appearance: none;\n    appearance: none;\n    width: 100%;\n    height: 8px;\n    border-radius: 4px;\n    background: linear-gradient(90deg, #2196f3, #9c27b0);\n    outline: none;\n    transition: background 0.2s ease;\n  }\n  .custom-slider .md-slider[value=\"30\"],\n  .custom-slider .md-slider[value=\"0.75\"],\n  .custom-slider .md-slider[value=\"30\"] {\n    background: linear-gradient(90deg, #2196f3 50%, #9c27b0);\n  }\n  .custom-slider .md-slider::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    appearance: none;\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    background: #ffffff;\n    border: 2px solid #9c27b0;\n    cursor: pointer;\n    box-shadow: 0 0 8px rgba(156, 39, 176, 0.7);\n    transition: transform 0.2s ease, box-shadow 0.2s ease;\n  }\n  .custom-slider .md-slider::-webkit-slider-thumb:hover {\n    transform: scale(1.1);\n    box-shadow: 0 0 12px rgba(156, 39, 176, 1);\n  }\n  .custom-slider .md-slider::-moz-range-thumb {\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    background: #ffffff;\n    border: 2px solid #9c27b0;\n    cursor: pointer;\n    box-shadow: 0 0 8px rgba(156, 39, 176, 0.7);\n  }\n  .custom-slider .md-slider-label {\n    font-weight: 500;\n    color: #ffffff;\n    margin-bottom: 5px;\n    font-size: 0.9em;\n  }\n  .custom-slider .md-slider-value {\n    color: #9c27b0;\n    font-size: 0.9em;\n    font-weight: 500;\n    margin-top: 5px;\n  }\n\n  /* Button Styling */\n  .custom-button {\n    border-radius: 6px;\n    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);\n    transition: transform 0.2s ease, background 0.2s ease;\n    position: relative;\n    overflow: hidden;\n    font-size: 0.9em;\n    padding: 8px;\n  }\n  .custom-button-on {\n    background: linear-gradient(45deg, #2196f3, #42a5f5);\n  }\n  .custom-button-off {\n    background: linear-gradient(45deg, #e91e63, #f06292);\n  }\n  .custom-button:hover {\n    transform: translateY(-2px);\n  }\n  .custom-button:active::after {\n    content: '';\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    width: 300%;\n    height: 300%;\n    background: rgba(255, 255, 255, 0.2);\n    border-radius: 50%;\n    transform: translate(-50%, -50%) scale(0);\n    animation: ripple 0.4s ease-out;\n  }\n  @keyframes ripple {\n    to { transform: translate(-50%, -50%) scale(1); opacity: 0; }\n  }\n\n  /* Switch Styling */\n  .custom-switch .md-switch {\n    width: 50px;\n    height: 24px;\n    border-radius: 12px;\n    background: rgba(255, 255, 255, 0.2);\n    transition: background 0.2s ease;\n  }\n  .custom-switch .md-switch.md-checked {\n    background: #9c27b0;\n    box-shadow: 0 0 8px rgba(156, 39, 176, 0.7);\n  }\n  .custom-switch .md-switch::after {\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    background: #ffffff;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\n    transition: transform 0.2s ease;\n  }\n\n  /* Date Picker Styling */\n  .custom-date-picker .md-input {\n    border-radius: 6px;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    background: rgba(255, 255, 255, 0.1);\n    backdrop-filter: blur(5px);\n    padding: 8px;\n    color: #ffffff;\n    font-size: 0.9em;\n    transition: border-color 0.2s ease;\n  }\n  .custom-date-picker .md-input:hover {\n    border-color: #9c27b0;\n  }\n\n  /* Time Input Styling */\n  .custom-time-input .md-input {\n    border-radius: 6px;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    background: rgba(255, 255, 255, 0.1);\n    backdrop-filter: blur(5px);\n    padding: 8px;\n    color: #ffffff;\n    font-size: 0.9em;\n    transition: border-color 0.2s ease;\n  }\n  .custom-time-input .md-input:hover {\n    border-color: #9c27b0;\n  }\n\n  /* Text Styling */\n  .custom-text {\n    background: rgba(255, 255, 255, 0.1);\n    border-radius: 6px;\n    padding: 8px;\n    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);\n    color: #ffffff;\n    font-weight: 500;\n    text-align: center;\n    font-size: 0.9em;\n  }\n  .custom-time {\n    animation: tick 1s infinite;\n  }\n  @keyframes tick {\n    0%, 100% { transform: scale(1); }\n    50% { transform: scale(1.02); }\n  }\n\n  /* Toast Notification */\n  .custom-toast {\n    background: rgba(156, 39, 176, 0.9);\n    border-radius: 6px;\n    color: #ffffff;\n    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);\n    font-size: 0.9em;\n    padding: 10px;\n    animation: fadeOut 0.4s ease-out 1.6s forwards;\n  }\n  @keyframes fadeOut {\n    to { opacity: 0; transform: translateY(-10px); }\n  }\n\n  /* Responsive Design */\n  @media (max-width: 1024px) {\n    .custom-group {\n      width: 100% !important;\n      max-width: 100%;\n      display: block;\n    }\n    .nr-dashboard-card {\n      margin: 3px;\n      padding: 3px;\n    }\n    .custom-slider .md-slider-wrapper,\n    .custom-text,\n    .custom-gauge,\n    .custom-chart,\n    .custom-button,\n    .custom-switch,\n    .custom-date-picker,\n    .custom-time-input {\n      width: 100% !important;\n    }\n    .custom-button {\n      width: 48% !important;\n      margin: 1%;\n      display: inline-block;\n    }\n  }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 120,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d9516703360d89b2",
+        "type": "ui_button",
+        "z": "293b5438cc8f9a69",
+        "name": "Buzzer On",
+        "group": "ef57903d498ff7c9",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "On",
+        "tooltip": "Turn buzzer on",
+        "color": "#ffffff",
+        "bgcolor": "",
+        "className": "custom-button custom-button-on",
+        "icon": "fa-bell",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "ADMIN-MAIN-ON-OFF",
+        "topicType": "str",
+        "x": 120,
+        "y": 760,
+        "wires": [
+            [
+                "f6b4643009a3793b"
+            ]
+        ]
+    },
+    {
+        "id": "e5ff0a0c87e8c374",
+        "type": "ui_button",
+        "z": "293b5438cc8f9a69",
+        "name": "Buzzer Off",
+        "group": "ef57903d498ff7c9",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Off",
+        "tooltip": "Turn buzzer off",
+        "color": "#ffffff",
+        "bgcolor": "",
+        "className": "custom-button custom-button-off",
+        "icon": "fa-bell-slash",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "ADMIN-MAIN-ON-OFF",
+        "topicType": "str",
+        "x": 130,
+        "y": 820,
+        "wires": [
+            [
+                "f6b4643009a3793b"
+            ]
+        ]
+    },
+    {
+        "id": "f8f81284d1e27a7d",
+        "type": "function",
+        "z": "293b5438cc8f9a69",
+        "name": "Not Scheduled",
+        "func": "return { payload: 'NOT_SCHEDULED', topic: 'ADMIN-SCH-ON' };",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 900,
+        "wires": [
+            [
+                "ab832cc9a2a51cdc"
+            ]
+        ]
+    },
+    {
+        "id": "9aadcfb5ea8f372f",
+        "type": "function",
+        "z": "293b5438cc8f9a69",
+        "name": "Valid Schedule",
+        "func": "return { payload: msg.payload, topic: 'ADMIN-SCH-ON' };",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 940,
+        "wires": [
+            [
+                "ab832cc9a2a51cdc"
+            ]
+        ]
+    },
+    {
+        "id": "ab832cc9a2a51cdc",
+        "type": "mqtt out",
+        "z": "293b5438cc8f9a69",
+        "name": "Schedule Output",
+        "topic": "",
+        "qos": "0",
+        "retain": false,
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "6ce6b9e8d98fe216",
+        "x": 1100,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "4e977cb882f9d17d",
+        "type": "ui_switch",
+        "z": "293b5438cc8f9a69",
+        "name": "Schedule Switch",
+        "label": "Schedule",
+        "tooltip": "Enable/disable scheduling",
+        "group": "ef57903d498ff7c9",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "payload",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "fa-check",
+        "oncolor": "#9c27b0",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "fa-times",
+        "offcolor": "#d32f2f",
+        "animate": true,
+        "className": "custom-switch",
+        "x": 120,
+        "y": 880,
+        "wires": [
+            [
+                "c42161b4aa6bb584"
+            ]
+        ]
+    },
+    {
+        "id": "52f0c12021296e35",
+        "type": "ui_date_picker",
+        "z": "293b5438cc8f9a69",
+        "name": "Schedule Date",
+        "label": "Date",
+        "group": "ef57903d498ff7c9",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "topic": "payload",
+        "topicType": "msg",
+        "className": "custom-date-picker",
+        "x": 120,
+        "y": 940,
+        "wires": [
+            [
+                "675f5e564e3901e1"
+            ]
+        ]
+    },
+    {
+        "id": "19568cdc42d42959",
+        "type": "ui_text_input",
+        "z": "293b5438cc8f9a69",
+        "name": "Schedule Time",
+        "label": "Time",
+        "tooltip": "Enter time (HH:MM)",
+        "group": "ef57903d498ff7c9",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "time",
+        "delay": 300,
+        "topic": "payload",
+        "sendOnBlur": true,
+        "className": "custom-time-input",
+        "topicType": "msg",
+        "x": 120,
+        "y": 1000,
+        "wires": [
+            [
+                "d8938c7954b3f1df"
+            ]
+        ]
+    },
+    {
+        "id": "c42161b4aa6bb584",
+        "type": "change",
+        "z": "293b5438cc8f9a69",
+        "name": "Set Schedule Status",
+        "rules": [
+            {
+                "t": "set",
+                "p": "isScheduled",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 880,
+        "wires": [
+            [
+                "9d167aa9cdb2ce7f"
+            ]
+        ]
+    },
+    {
+        "id": "675f5e564e3901e1",
+        "type": "change",
+        "z": "293b5438cc8f9a69",
+        "name": "Set Schedule Date",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ScheduleDate",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 940,
+        "wires": [
+            [
+                "9d167aa9cdb2ce7f"
+            ]
+        ]
+    },
+    {
+        "id": "d8938c7954b3f1df",
+        "type": "change",
+        "z": "293b5438cc8f9a69",
+        "name": "Set Schedule Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ScheduleTime",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 1000,
+        "wires": [
+            [
+                "9d167aa9cdb2ce7f"
+            ]
+        ]
+    },
+    {
+        "id": "9d167aa9cdb2ce7f",
+        "type": "function",
+        "z": "293b5438cc8f9a69",
+        "name": "Validate Schedule",
+        "func": "let isScheduled = global.get('isScheduled');\nlet ScheduleDate = global.get('ScheduleDate');\nlet ScheduleTime = global.get('ScheduleTime');\n\nif (isScheduled && ScheduleDate && ScheduleTime) {\n  try {\n    let schedule = new Date(ScheduleDate);\n    let [hours, minutes] = ScheduleTime.split(':');\n    if (!hours || !minutes || isNaN(parseInt(hours)) || isNaN(parseInt(minutes))) {\n      throw new Error('Invalid time format');\n    }\n    schedule.setHours(parseInt(hours), parseInt(minutes), 0, 0);\n    if (isNaN(schedule.getTime())) {\n      throw new Error('Invalid date');\n    }\n    let now = new Date(Date.now() + 5.5 * 60 * 60 * 1000);\n    if (now > schedule) {\n      return { payload: null, notify: 'Schedule is in the past' };\n    }\n    return { payload: schedule.getTime().toString(), notify: 'Schedule set for ' + schedule.toLocaleString('en-US', { timeZone: 'Asia/Colombo' }) };\n  } catch (e) {\n    node.warn('Schedule validation error: ' + e.message);\n    return { payload: null, notify: 'Invalid date or time format' };\n  }\n} else if (isScheduled === false) {\n  return { payload: 'NOT_SCHEDULED', notify: 'Scheduling disabled' };\n}\nreturn { payload: null, notify: 'Please complete date and time' };",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 940,
+        "wires": [
+            [
+                "41741ec8f7b77c09",
+                "94a251a02ea3b3ad"
+            ]
+        ]
+    },
+    {
+        "id": "41741ec8f7b77c09",
+        "type": "switch",
+        "z": "293b5438cc8f9a69",
+        "name": "Schedule Router",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "NOT_SCHEDULED",
+                "vt": "str"
+            },
+            {
+                "t": "nnull"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 3,
+        "x": 720,
+        "y": 940,
+        "wires": [
+            [
+                "f8f81284d1e27a7d"
+            ],
+            [
+                "9aadcfb5ea8f372f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "94a251a02ea3b3ad",
+        "type": "ui_toast",
+        "z": "293b5438cc8f9a69",
+        "position": "top right",
+        "displayTime": "2",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "custom-toast",
+        "topic": "",
+        "name": "Schedule Notification",
+        "x": 720,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "130e678396211c7d",
+        "type": "inject",
+        "z": "293b5438cc8f9a69",
+        "name": "Update Every Second",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 1060,
+        "wires": [
+            [
+                "58c76667a1751b8a"
+            ]
+        ]
+    },
+    {
+        "id": "58c76667a1751b8a",
+        "type": "function",
+        "z": "293b5438cc8f9a69",
+        "name": "Adjust to UTC+5.5",
+        "func": "const now = new Date();\nconst utcOffset = 5.5 * 60 * 60 * 1000;\nconst localTime = new Date(now.getTime() + utcOffset);\nconst hours = localTime.getUTCHours().toString().padStart(2, '0');\nconst minutes = localTime.getUTCMinutes().toString().padStart(2, '0');\nconst seconds = localTime.getUTCSeconds().toString().padStart(2, '0');\nmsg.payload = `${hours}:${minutes}:${seconds}`;\nmsg.topic = 'current-time';\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1060,
+        "wires": [
+            [
+                "30bc6f5fc0dfc2b2"
+            ]
+        ]
+    },
+    {
+        "id": "30bc6f5fc0dfc2b2",
+        "type": "ui_text",
+        "z": "293b5438cc8f9a69",
+        "group": "ef57903d498ff7c9",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "name": "Current Time",
+        "label": "Time:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "custom-text custom-time",
+        "style": false,
+        "font": "Roboto",
+        "fontSize": 16,
+        "color": "#ffffff",
+        "x": 560,
+        "y": 1060,
+        "wires": []
+    }
+]
