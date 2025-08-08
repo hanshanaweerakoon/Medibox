@@ -25,8 +25,9 @@ It enhances a Medibox with *light and temperature monitoring, an **automatic ser
 - OLED Display (SSD1306)
 
 
-![Breadboard Diagram](1.png)
-
+![Wiring Diagram](1.png)
+![Node-RED flow graph](2.png)
+![Node-RED Dashboard](3.png)
 ---
 
 
