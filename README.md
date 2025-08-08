@@ -1,7 +1,6 @@
 # Medibox 
 
-This project is part of the *EN2853 Embedded Systems and Applications*.
-It enhances a Medibox with *light and temperature monitoring, an **automatic servo-controlled window, and a **Node-RED dashboard* for remote monitoring and control.
+An IoT-enabled medicine management system with light & temperature monitoring, servo-controlled shading, and alarm-based scheduling. Built on ESP32 with MQTT and a Node-RED dashboard for remote monitoring & control.
 
 ---
 
