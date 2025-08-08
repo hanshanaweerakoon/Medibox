@@ -24,8 +24,9 @@ It enhances a Medibox with *light and temperature monitoring, an **automatic ser
 - Passive Buzzer
 - OLED Display (SSD1306)
 
+## 📷 Wiring Diagram<img width="627" height="456" alt="1" src="https://github.com/user-attachments/assets/72d11b79-a55a-4148-9351-ab4a53e538d5" />
 
-![Wiring Diagram](1.png)
+
 ![Node-RED flow graph](2.png)
 ![Node-RED Dashboard](3.png)
 ---
